@@ -45,7 +45,7 @@ class UserProfile(AbstractBaseUser, PermissionsMixin):
     
     # Overrride of default field
     USERNAME_FIELD = 'email'
-    REUIRED_FIELDS = ['name']
+    REQUIRED_FIELDS = ['name']
 
     def get_full_name(self):
         '''Retreive full name of user.'''
